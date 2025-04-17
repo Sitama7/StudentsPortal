@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная | Студенческий портал</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">СтудПортал</div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="assignments.html">Задания</a>
+        <a href="profile.html">Профиль</a>
+        <a href="login.html">Вход</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="section-title">Добро пожаловать!</h1>
+    <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">
+      Здесь вы можете просматривать курсы, выполнять задания и отслеживать свой прогресс.
+    </p>
+
+    <div class="card-grid">
+      <div class="course-card" onclick="location.href='courses.html'">
+        <h3>Перейти к курсам</h3>
+        <p>Выберите интересующие вас дисциплины и начните обучение.</p>
+      </div>
+      <div class="course-card" onclick="location.href='assignments.html'">
+        <h3>Проверить задания</h3>
+        <p>Посмотрите сроки сдачи и подробности заданий.</p>
+      </div>
+      <div class="course-card" onclick="location.href='profile.html'">
+        <h3>Ваш профиль</h3>
+        <p>Информация о вас и пройденных курсах.</p>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <a href="courses.html" class="btn">К курсам</a>
+      <a href="assignments.html" class="btn">К заданиям</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оценки | StudyPortal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .grade-box {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+      margin: 2rem auto;
+      max-width: 700px;
+    }
+
+    .upload-section {
+      margin-bottom: 2rem;
+    }
+
+    .upload-section input {
+      padding: 0.6rem;
+      margin-right: 1rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .upload-section button {
+      padding: 0.6rem 1.2rem;
+      background: #557cff;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .grade-result {
+      padding: 1rem;
+      background: #f2f5ff;
+      border-radius: 15px;
+      margin-top: 1rem;
+    }
+
+    .grade-result p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">StudyPortal</div>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="assignments.html">Задания</a>
+        <a href="grades.html" class="active">Оценки</a>
+        <a href="profile.html">Профиль</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="grade-box">
+    <h2>Загрузка работы</h2>
+    <div class="upload-section">
+      <input type="file" id="fileInput" />
+      <button onclick="showGrade()">Отправить</button>
+    </div>
+
+    <div id="gradeBlock" class="grade-result" style="display:none;">
+      <p><strong>Работа:</strong> Математика - Задание №1</p>
+      <p><strong>Дата сдачи:</strong> 17 апреля 2025</p>
+      <p><strong>Оценка:</strong> 87 / 100 ⭐ 4.4</p>
+      <p><strong>Комментарий:</strong> Отличная работа, но есть небольшие ошибки в расчетах.</p>
+    </div>
+  </main>
+
+  <script>
+    function showGrade() {
+      // можно добавить реальные проверки/отправку
+      document.getElementById("gradeBlock").style.display = "block";
+    }
+  </script>
+</body>
+</html>
